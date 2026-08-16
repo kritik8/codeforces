@@ -5,10 +5,12 @@ int main(){
         vector<int> a(n);
         int x=INT_MAX;
         int diff =0;
-        for(int i = 0; i < n-1; i++) {
+        for(int i = 0; i < n; i++) {
             cin >> a[i];
-            diff = abs(a[i]-0);
-            x = min(x, diff);
+        }
+        for(int i=0; i<n; i++){
+            diff = abs(a[i]);
+            x = min(x,diff);
         }
         cout << x << endl;
     
