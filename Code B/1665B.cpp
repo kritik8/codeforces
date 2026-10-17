@@ -30,7 +30,7 @@ void solve() {
     int c = max_freq;
 
     while (c < n) {
-        ans++; 
+        ans++; // 1 clone operation
         c *= 2;
     }
 
