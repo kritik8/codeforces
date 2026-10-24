@@ -5,7 +5,6 @@ void solve(){
     cin >> n >> k;
     string s;
     cin >> s;
-
     vector<int> freq(26,0);
     for(char c : s){
         freq[c-'a']++;
@@ -15,7 +14,7 @@ void solve(){
         if(freq[i]%2==1) 
             odd++;
     }
-    if(odd -1 <= k)
+    if(odd < k+2)
         cout << "YES" << endl;
     else
         cout << "NO" << endl;
